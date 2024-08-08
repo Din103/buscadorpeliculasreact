@@ -3,13 +3,42 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 0 auto;
 }
+
 .main {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
+
 .form {
   align-items: center;
   display: flex;
   justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.movies {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px; /* Ajusta el espacio entre los elementos de la cuadrícula */
+}
+
+.movie {
+  text-align: center;
+  border: 1px solid #ddd; 
+  padding: 8px;
+  border-radius: 4px; 
+}
+
+.movie h3, .movie p{
+  margin: 5px;
 }
