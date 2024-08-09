@@ -28,11 +28,12 @@ function useSearch() {
 }
 
 function App() {
-  const { movies } = useMovies()
-  const { search, updateSearch, error } = useSearch() 
+  const { search, updateSearch, error } = useSearch()
+  const { movies, getMovies } = useMovies({ search }) 
 
   const handleSubmit = (event) => {
     event.preventDefault()
+    getMovies()
   }
 
   const handleChange = (event) => {
